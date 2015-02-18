@@ -1,0 +1,29 @@
+!contents -R2 -g -p -f -h
+
+LAB REPORT - Test Design Exercises
+
+Name: Chenran Gong
+Andrew ID: cgong
+URL of your github repo:
+
+
+ 1. Summary
+
+•       Set up the environment of maven and FitNesse.
+•       Set up cobertura for testing coverage analysis.
+•	Implemented Triangle class, classify and isRightAngled method.
+•	Implemented Date class, nextDate and isLeapYear method.
+•	Designed and derived input space model for Triangle.
+•	Created Triange Test page hierarchy in Fitnesse wiki.
+•	Ran and passes all Fitnesse tests.
+•	Calculated the coverage of the tests and tuned the test cases.
+
+
+ 2. Lessons Learned
+
+•	At first, I have no experience of integration testing. After this lab, I know Fitnesse is a fully integrated standalone wiki and acceptance testing framework. After using Finesse, I think it is better than traditional functional testing because it gives feedback early and frequently and the tests are deterministic.
+•	The parts of designing an input space model, deriving test case specs and creating page hierarchy in Fitnesse wiki work well, because there are detailed instructions on lecture slides.
+•	Challenges: 1 when setting up maven environment on my laptop, I faced a problem. There are errors when using “mvn test”. After searching the problem on Google, I found that the reason is I did not set the JAVA_HOME environment variable and then the problem was solved.  2 Another challenge is in Fitness wiki. At first the test cases in wiki cannot find the class I defined in fit.triangle. Then I solved it by importing the Triangle Header.
+•	Effectiveness: I designed the input space model from both syntactic approach and semantic approach.  And I recognized that certain values are important so I use Base Choise(BC) to combine of blocks. The tests of syntactic approach are effective and the results are as expected. But the tests of semantic approach are not passed. Then I checked my code and found there is a problem in the class that extends ColumnFixture. I set the instance of Triangle Class as a global variable, which caused the tests failed. Then I solved the problem by setting the instance as a local variable.
+•	Coverage of tests: At first the Line Coverage is 100% and Branch Coverage is only 75%. Then I designed more branch tests according to the coverage report and add the branch coverage to 95%. 
+•	I learned how to create test cases from simple input space models. First, use syntactic approach and semantic approach to choose characteristics. Then partition the characteristics and use strategies to identify blocks. If there are more than one input space model, the divide-and-conquer approach can help creating several small input space model. Lastly, choose combinations of blocks to test. 

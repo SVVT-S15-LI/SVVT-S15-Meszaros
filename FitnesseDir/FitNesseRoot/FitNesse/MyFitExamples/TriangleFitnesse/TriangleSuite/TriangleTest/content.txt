@@ -1,0 +1,29 @@
+<test page>
+!contents -R2 -g -p -f -h
+
+!include .FitNesse.MyFitExamples.TriangleFitnesse.TriangleHeader
+
+| fit.triangle.Triangles |
+| a  | b  | c  | isRightAngled? | type?   |
+| 2  | 2 | -1  |     false      | INVALID |
+| -1  | 2  | 2 |     false      | INVALID |
+| 2 | -1  | 2  |     false      | INVALID |
+| 2  | 2  | 0 |     false      | INVALID |
+| 0  | 2 | 2  |     false      | INVALID |
+| 2  | 0  | 2 |     false      | INVALID |
+| 2  | 2  | 1 |     false      | TRIANGLE.ISOSCELES |
+| 1  | 2  | 2 |     false      | TRIANGLE.ISOSCELES |
+| 2  | 1  | 2 |     false      | TRIANGLE.ISOSCELES |
+| -1  | -2 | -3  |     false      | INVALID |
+| 3  | 4  | 8  |     false      | INVALID |
+| 3  | 5  | 6  |     false      | TRIANGLE.SCALENE |
+| 3  | 3  | 4  |     false      | TRIANGLE.ISOSCELES|
+| 4  | 3  | 3  |     false      | TRIANGLE.ISOSCELES|
+| 3  | 4  | 3  |     false      | TRIANGLE.ISOSCELES|
+| 3  | 3  | 3  |     false      | TRIANGLE.EQUILATERAL|
+| 3  | 4  | 5  |     true       | TRIANGLE.SCALENE |
+| 13  | 12  | 5  |     true       | TRIANGLE.SCALENE |
+| 4  | 5  | 3  |     true       | TRIANGLE.SCALENE |
+| 1073741823 | 1073741823  | 1073741823  |     false     | TRIANGLE.EQUILATERAL |
+| 1073741824 | 1073741823  | 1073741822  |     false     | TRIANGLE.SCALENE |
+| 1073741823 | 1073741823  | 1073741822  |     false     | TRIANGLE.ISOSCELES |
