@@ -1,0 +1,16 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestAnythingBut |
+| pValue | match | isAnythingBut? |
+|null|	""|	ERROR|
+|2|	1234|	false|
+|""|	hello|	ERROR|
+|ye|	123ha{}[]|true|
+|null|	null|	ERROR|
+|""|	5431|	ERROR|
+|#|	[]!@#%|	true|
+|null|	onlydigit|ERROR|
+|el|	hello|	false|
+|""|	onlysymbol|ERROR|

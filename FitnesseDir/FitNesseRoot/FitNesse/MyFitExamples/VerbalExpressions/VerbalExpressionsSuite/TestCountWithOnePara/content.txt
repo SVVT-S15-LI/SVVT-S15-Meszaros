@@ -1,0 +1,27 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestCountWithOnePara |
+| pValue | match | count | isCountWithOnePara? |
+|""|	hello|	2|	false|
+|a|	noe|	-1|	ERROR|
+|null|	""|	0|	false|
+|null|	null|	-1|	ERROR|
+|""|	""|	-1|	ERROR|
+|""|	hi|	1|	false|
+|""|	null|	0|	ERROR|
+|hi|	""|	2|	false|
+|we|	null|	1|	ERROR|
+|aa|	wwaa|	0|	false|
+|null|	""|	1|	false|
+|null|	hai|	1|	false|
+|null|	null|	2|	ERROR|
+|a|	yea|	1|	true|
+|""|	""|	0|	false|
+|we|	re|	-1|	ERROR|
+|a|	dhe|	1|	false|
+|a|	yea|	2|	false|
+|a|	aeya|	2|	true|
+|a|	aeya|	3|	false|
+|a|	aeya|	1|	false|

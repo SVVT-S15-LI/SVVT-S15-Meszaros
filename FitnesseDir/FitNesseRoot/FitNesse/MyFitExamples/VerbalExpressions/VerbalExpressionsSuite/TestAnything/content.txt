@@ -1,0 +1,12 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestAnything |
+| match | isAnything? |
+|null	|ERROR|
+|""	|true|
+|123	|true|
+|hello	|true|
+|{}[]!@#|true|
+|ha123{}[]!|true|

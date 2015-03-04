@@ -1,0 +1,15 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestGetTextWithOnePara |
+| pValue | match | isText? |
+|null	|empty|	ERROR|
+|6	|456876|	66|
+|empty	|onlyword|	empty|
+|123	|word456!@#|	empty|
+|empty	|3245987|	empty|
+|word123!@#|	*&^$*(%|	empty|
+|null|	3245987	|ERROR|
+|or|	onlyword|	or|
+|empty|	*&^$*(%	|empty|

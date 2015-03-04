@@ -1,0 +1,28 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestCountWithTwoPara |
+|count1 | count2 | pValue | match | isCountWithTwoPara? |
+|-1|	-1|	null|	null	|ERROR|
+|-1|	0|	""|	""	|ERROR|
+|-1|	1|	hae|	ewq	|ERROR|
+|0|	-1|	""|	ewr	|ERROR|
+|0|	2|	aa|	""	|false|
+|1|	1|	null|	""	|false|
+|1|	2|	""|	null	|ERROR|
+|2|	0|	aa|	null	|ERROR|
+|2|	2|	null|	aa	|false|
+|0|	0|	null|	aa	|false|
+|0|	1|	""	null	|ERROR|
+|1|	-1|	wqr|	""	|ERROR|
+|2|	-1|	empty|	""	|ERROR|
+|1|	0|	null|	gfd	|ERROR|
+|-1|	2|	""|	null	|ERROR|
+|2|	1|	eqw|	""	|ERROR|
+|1|	1|	aa|	waa	|true|
+|1|	1|	a|	aaaaaaaa|false|
+|1|	10|	aa|	waa	|true|
+|2|	3|	a|	wa	|false|
+|2|	4|	a|	aaa	|true|
+|2|	4|	a|	aaaaaaaa|false|

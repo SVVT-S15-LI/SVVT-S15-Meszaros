@@ -1,0 +1,19 @@
+<test page>
+
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestExact |
+|pValue | match | isExact? |
+|null	|empty|	ERROR|
+|w	|123456|true|
+|null	|*&^$(&	|ERROR|
+|a	|what123@#$|false|
+|null	|null	|ERROR|
+|what	|empty	|false|
+|null	|onlyword|ERROR|
+|@#	|%*@#$%	|false|
+|notempty|	null|false|
+|null|	982345	|ERROR|
+|abce|	onlywords|true|
+|null|	combin@tion987|	ERROR|

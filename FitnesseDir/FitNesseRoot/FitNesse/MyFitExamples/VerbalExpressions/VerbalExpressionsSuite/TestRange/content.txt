@@ -1,0 +1,17 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestRange |
+| str1 | str2 | match | isRange? |
+|""|	2|	3	|	FALSE|
+|""|	null|	e	|	ERROR|
+|a|	z|	[]!21dwhwh|	FALSE|
+|null|	null|	d	|	ERROR|
+|""|	""|	r	|	FALSE|
+|a|	null|	""	|	ERROR|
+|""|	""|	null	|	ERROR|
+|""|	""|	""	|	FALSE|
+|a|	z|	null	|	ERROR|
+|a|	z|	b	|	TRUE|
+|null|	null|	combination|	ERROR|
