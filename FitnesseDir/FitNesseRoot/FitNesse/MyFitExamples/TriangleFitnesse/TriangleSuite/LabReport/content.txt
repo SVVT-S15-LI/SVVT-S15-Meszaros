@@ -4,7 +4,7 @@ LAB REPORT - Test Design Exercises
 
 Name: Chenran Gong
 Andrew ID: cgong
-URL of your github repo:
+URL of your github repo: https://github.com/cmusv-svvt/Chenran_Gong_FitNesse
 
 
  1. Summary

@@ -1,0 +1,16 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestMaybeWithString |
+| add | match | isMaybe? |
+|null|""	|	ERROR| 
+|12	|873212	|	true|
+|""	|yes	|	false|
+|221	|!!87heq|	false|
+|null	|null	|	ERROR|
+|""	|321	|	false|
+|dsa	|(*&	|	false|
+|null	|4325	|	ERROR|
+|s	|yes	|	true|
+|""	|!!!!!	|	false|

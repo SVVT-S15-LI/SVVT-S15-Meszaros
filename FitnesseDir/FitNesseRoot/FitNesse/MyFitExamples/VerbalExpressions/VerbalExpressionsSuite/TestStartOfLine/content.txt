@@ -1,0 +1,23 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestStartOfLine |
+| start | match | isStartOfLine? |
+|""	|null|	ERROR|
+|""	|""	|true|
+|""	|12345	|false|
+|""	|whatsup|	false|
+|""	|[]@#$!	|false|
+|""	|what?123[]|	false|
+|""	|null	|ERROR|
+|null	|32145	|false|
+|ew	|hello	|false|
+|123	|()&[]	|false|
+|""	|what?123[]|	false|
+|notempty|	null|	ERROR|
+|12	|1234	|true|		
+|null|	youslq	|false|
+|""|	()&[]	|false|
+|31|	what?123[]|	false|
+|23|	123	|false|

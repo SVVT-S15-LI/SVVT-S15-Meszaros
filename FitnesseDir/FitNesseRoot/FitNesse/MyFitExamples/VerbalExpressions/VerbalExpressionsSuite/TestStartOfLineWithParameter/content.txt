@@ -1,0 +1,28 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.TestStartOfLineParameter |
+|enable | start | match | isStartOfLine? |
+| T |	“" |	null |	ERROR |
+| F |	null |	""|	false |
+| T |	12 |	12 |	true |
+| F |	“" |	whatsup |	false |
+| T |	null |	[]@#$!	 | false |
+| F |	null |	what?123[] |	false |
+| T |	null |	null |	ERROR |
+| T |	we |	“" |	false |
+| F |	null |	32145 |	false |
+| T |	ew |	hello |	false |
+| F |	123 |	()&[] |	false |
+| T |	"" |	what?123[] |	false |
+| F |	http |	null |	ERROR |
+| T |	"" |	"" |	true |
+| F |	8 |	87321 |	false |
+| T |	null |	youslq |	false |
+| F |	“" |	()&[] |	false |
+| T |	31 |	what?123[] |	false |
+| T |	23 |	123	 | false |
+| F |	"" |	what?123[] |	false |
+| F |	sa |	[]sae1 |	 false |			
+| F |	! |	[]! |	false |

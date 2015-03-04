@@ -16,10 +16,11 @@
 | 2  | 1  | 2 |     false      | TRIANGLE.ISOSCELES |
 | -1  | -2 | -3  |     false      | INVALID |
 | 3  | 4  | 8  |     false      | INVALID |
+| 3  | 4  | 7  |     false      | INVALID |
 | 3  | 5  | 6  |     false      | TRIANGLE.SCALENE |
 | 3  | 3  | 4  |     false      | TRIANGLE.ISOSCELES|
-| 4  | 3  | 3  |     false      | TRIANGLE.ISOSCELES|
 | 3  | 4  | 3  |     false      | TRIANGLE.ISOSCELES|
+| 4  | 3  | 3  |     false      | TRIANGLE.ISOSCELES|
 | 3  | 3  | 3  |     false      | TRIANGLE.EQUILATERAL|
 | 3  | 4  | 5  |     true       | TRIANGLE.SCALENE |
 | 13  | 12  | 5  |     true       | TRIANGLE.SCALENE |

@@ -1,0 +1,7 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+| fit.verbalExpression.VerbalExpressionFit |
+|test? | 
+|  True  | 
