@@ -22,8 +22,8 @@ public class TestCountWithOnePara extends ColumnFixture{
 				pValueStr = pValue;
 			}
 			try{
-				VerbalExpression regex = VerbalExpression.regex().find(pValueStr).count(Integer.parseInt(count)).build();			
-				Pattern pt1 = Pattern.compile(regex.toString());
+				VerbalExpression testRegex = new VerbalExpression.Builder().add(pValueStr).count(Integer.parseInt(count)).build();			
+				Pattern pt1 = Pattern.compile(testRegex.toString());
 				result = pt1.matcher(matchStr).matches();
 			}catch(Exception e){
 				return "ERROR";

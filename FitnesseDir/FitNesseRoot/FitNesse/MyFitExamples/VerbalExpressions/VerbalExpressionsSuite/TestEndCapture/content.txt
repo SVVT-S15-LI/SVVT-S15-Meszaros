@@ -1,0 +1,17 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+
+
+| fit.verbalExpression.TestEndCapture |
+| input | match | isEndCapture? |
+|null	|empty|	ERROR|
+|123	|123987|	true|
+|""	|onlyword|	true|
+|123	|https://www.google456.com|false|
+|""	|1234567890	|true|
+|safari765|	!@#$%^&*()|false|
+|null|	83745234	|ERROR|
+|onl|	onlyword	|true|
+|""|	^%$#@!~&(	|true|

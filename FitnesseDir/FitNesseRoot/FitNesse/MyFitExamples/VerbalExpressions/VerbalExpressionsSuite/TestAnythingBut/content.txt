@@ -2,15 +2,79 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue is the parameter of anythingBut method, match is the String we use to match the RE|
+|pValue|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|pValue|Relation to empty|null,empty(""),not empty||
+|match|Relation to empty and type of elements|null,empty(""),only digit, only letter, only symbol and combination||
+|isContains|is match contains pValue|T, F| |
+
+Apply all pair to generate combinations.
+
+| Comment |
+|pValue|	match|	isContains  |impossible|
+|empty	|null|	T	|X|
+|null	|empty|	F	||
+|notempty|	onlydigit|	T||	
+|empty	|onlyword	|F|	|
+|null	|onlysymbol|	T|	X|
+|notempty|	combination	|F|	|
+|null	|null|	F	||
+|notempty|	empty|	T|	X|
+|empty	|onlydigit|	F	||
+|null	|onlyword|	T|	X|
+|notempty|	onlysymbol|	F||	
+|empty	|combination	|T|	X|
+|notempty|	null|	T	|X|
+|empty	|empty	|F	|X|
+|null	|onlydigit	|F||	
+|notempty|	onlyword|	T||	
+|empty	|onlysymbol|	F	||
+|null	|combination	|T|	X|
+
+18 cases, 8 impossible
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table for valid value	|							
+|isMATCH=digit	|T	|T|	-|	-|	-|	-|	-|	-|
+|isMATCH=word|	-	|-|	T	|T	|-|	-	|-|	-|
+|isMATCH=symbol|	-	|-	|-|	-|	T|	T|	-|	-|
+|isMATCH=combination|	-	|-	|-	|-	|-	|-	|T	|T|
+|isContainsStringAdd|	T|	F|	T|	F|	T|	F|	T|	F|
+|isAnythingBut	|	|X	|	|X	||	X|	|	X	|			
+
+It could be 
+
+| Comment |
+|Decision table for valid value	|							
+|isMATCH=digit	|-	|-|
+|isMATCH=word|	-	|-|
+|isMATCH=symbol|	-	|-	|
+|isMATCH=combination|	-	|-	|
+|isContainsStringAdd|	T|	F|
+|isAnythingBut	|	|X	|			
+
+2 cases, all covered by All Pair.
+
 | fit.verbalExpression.TestAnythingBut |
 | pValue | match | isAnythingBut? |
 |null|	""|	ERROR|
 |2|	1234|	false|
-|""|	hello|	ERROR|
+|""|	hello|	true|
 |ye|	123ha{}[]|true|
 |null|	null|	ERROR|
-|""|	5431|	ERROR|
-|#|	[]!@#%|	true|
+|""|	5431|	true|
+|#|	[]!@%|	true|
 |null|	onlydigit|ERROR|
 |el|	hello|	false|
-|""|	onlysymbol|ERROR|
+|""|	onlysymbol|true|

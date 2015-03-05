@@ -2,6 +2,59 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - add is the parameter of maybe method, match is the String we use to match the RE|
+|add|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|add|Relation to empty|null,empty(""),not empty||
+|match|Relation to empty and type of elements|null,empty(""),only digit, only letter, only symbol and combination||
+|isEnd|is add the end of match|T, F|Both add and match should be non-null String or null |
+
+Apply all pair to generate combinations
+
+| Comment |
+|add|	match|	isEnd|	impossible|
+|empty|	null	|T|	X|
+|null|	empty|	F|	|
+|not empty |	only digit|	T||	
+|empty|	onlyletter|	F|	|
+|null	|onlysymbol|	T	|X|
+|notempty|	combination|	F||	
+|null	|null|	F	||
+|notempty	|empty	|T|	X|
+|empty	|onlydigit|	F	||
+|null	|onlyletter|	T|	X|
+|notempty|	onlysymbol|	F||	
+|empty	|combination|	T|	X|
+|notempty	|null|	T|	X|
+|empty|	empty|	F	|X|
+|null	|onlydigit|	F||	
+|notempty	|onlyletter|	T||	
+|empty	|onlysymbol|	F	||
+|null	|combination|	T|	X|
+
+18 cases, 8 impossible
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table for valid value	|							
+|isMATCH=digit|	-|	-	|					
+|isMATCH=word	|-|	-	|					
+|isMATCH=symbol	|-	|-	|					
+|isMATCH=combination|	-	|-|						
+|isEndOfMATCH|	T|	F|						
+|isMAYBE	|X	||						
+2 cases, all covered by AP combination.	
+
+
 | fit.verbalExpression.TestMaybeWithString |
 | add | match | isMaybe? |
 |null|""	|	ERROR| 

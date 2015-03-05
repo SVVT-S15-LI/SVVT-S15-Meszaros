@@ -2,6 +2,69 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - add is the parameter of startOfLine method, match is the String we use to match the RE|
+|start|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|start|Relation to empty|null,empty(""),not empty||
+|match|Relation to empty and type of elements|null,empty(""),only digit, only letter, only symbol and combination||
+|isContains|is match contains start|T, F| |
+|position|position of start in match|start,middle,end,not exist| |
+
+Apply all pair to generate combinations.
+
+| Comment |
+|start|	match|	isContains|	position|impossible|
+|empty	|combination|	F|	not exist||
+|empty	|empty|	T|	middle||
+|notempty|	combination|	T	|start||
+|notempty|	onlysymbol|	F|	middle|X|
+|null|	onlydigit|	T	|not exist|X|
+|empty	|null|	F|	start||
+|notempty|	onlydigit|	F|	end|X|
+|notempty|	empty|	F|	not exist||
+|null|	combination	|F|	middle|X|
+|null|	onlyletter|	F|	end|X|
+|null|	onlysymbol	|T|	start|X|
+|empty	|combination|	T|	end||
+|notempty|	onlyletter|	T	|start||
+|null|	null|	T	|middle||
+|empty|	onlydigit|	T|	middle||
+|empty|	onlyletter|	F|	middle|X|
+|empty|	onlysymbol|	T|	not exist|X|
+|notempty|	null|	F|	end|X|
+|null|	empty|	T|	start||
+|null|	onlyletter|	F|	not exist||
+|empty|	onlysymbol	|T|	end||
+|notempty|	null|	F|	not exist||
+|null|	empty|	T|	end||
+|empty|	onlydigit|	F|	start|X|
+
+24 cases, 10 impossible
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table for valid value	|							
+|isMATCH=digit|	-|	-	|-   |					
+|isMATCH=word	|-|	-	|-|					
+|isMATCH=symbol	|-	|-	|-|					
+|isMATCH=combination|	-	|-|-|						
+|isContains|	F|	T|T|
+|Position = start|	-|	T|F|
+|Position = middle|	-|	-|-|
+|Position = start|	-|	-|-|						
+|isStartOfLine	|	|x|	|					
+3 cases
+
+
 | fit.verbalExpression.TestStartOfLine |
 | start | match | isStartOfLine? |
 |""	|null|	ERROR|

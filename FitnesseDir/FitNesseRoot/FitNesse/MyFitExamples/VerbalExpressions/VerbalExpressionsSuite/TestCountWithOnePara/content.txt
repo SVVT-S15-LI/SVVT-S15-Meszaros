@@ -2,6 +2,61 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue is the String for count, count is the parameter of count method, match is the String we use to match the RE|
+|pValue|count|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|pValue|Relation to empty|null,empty(""),not empty||
+|count|Relation to 0 and 1|<0,=0,=1,>1||
+|match|Relation to empty|null,empty(""),not empty||
+|num|number of pValue in match|<0,=0,=1,>1| |
+|equals|is num equals to count|T,F| |
+
+Apply all pair to generate combinations.
+
+| Comment |
+|pValue|	match|count|	num  |
+|empty	|notempty	|>1|	0|
+|notempty|	notempty	|<0|	>1|
+|null	|empty|	0	|0|
+|null	|null|	<0|	<0|
+|empty	|empty|	<0|	1|
+|empty	|notempty|	1|	<0|
+|empty	|null|	0	|>1|
+|notempty	|empty|	>1|	<0|
+|notempty	|null	|1|	0|
+|notempty	|notempty|	0	|1|
+|null	|empty	|1	|>1|
+|null	|notempty|	1|	1|
+|null	|null	|>1	|1|
+|null*	|null*|	>1|	>1|
+|empty*	|empty*	|0	|<0|
+|notempty*|	notempty*|	<0|	0|
+
+18 cases
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table for valid value	|							
+|match contains pValue?	|F	|T|T|T|T|T|
+|count=1            	|-      |T|T|-|-|-|
+|count>1	        |-	|-|-|T|T|T|
+|num=1	                |-	|T|F|-|-|T|
+|num>1              	|-	|-|-|T|T|-|
+|equals?                |-      |-|-|T|F|-|
+|isCount                |	|X| |X| | |	
+
+6 cases
+
+
 | fit.verbalExpression.TestCountWithOnePara |
 | pValue | match | count | isCountWithOnePara? |
 |""|	hello|	2|	false|
@@ -17,11 +72,11 @@
 |null|	""|	1|	false|
 |null|	hai|	1|	false|
 |null|	null|	2|	ERROR|
-|a|	yea|	1|	true|
+|a|	a|	1|	true|
 |""|	""|	0|	false|
 |we|	re|	-1|	ERROR|
 |a|	dhe|	1|	false|
 |a|	yea|	2|	false|
-|a|	aeya|	2|	true|
+|a|	aa|	2|	true|
 |a|	aeya|	3|	false|
 |a|	aeya|	1|	false|

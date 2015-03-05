@@ -10,7 +10,7 @@ public class TestSomethingButNot extends ColumnFixture{
 	String match;
 	Boolean result;
 	
-	public String isAnythingButNot(){
+	public String isSomethingButNot(){
 		String matchStr = null;
 		String pValueStr = null;
 		if(match!=null){

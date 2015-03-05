@@ -2,6 +2,48 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+This is the test for getText(final String toTest) method.
+
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue is the parameter of getText method, match is the String we use to match.|
+|pValue|match| 
+
+Then identify characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|
+|pValue|Relation to empty|null,empty(""),not empty|
+|match|Type of string|null,empty(""),only digit, only word, only symbol, combination|
+|isInMatch|whether pValue is in match|T,F| 
+
+Apply all pair to generate combinations.
+
+| Comment |
+|Input|	match|	isInMatch|	Possible?|
+|empty|	null|	T|	×|
+|null|	empty|	F	||
+|notempty|	onlydigit|	T||	
+|empty|	onlyword|	F||	
+|null|	onlysymbol|	T|	×|
+|notempty|	combination|	F||	
+|null|	null|	F|	×|
+|notempty|	empty|	T|	×|
+|empty|	onlydigit|	F||	
+|null|	onlyword|	T|	×|
+|notempty|	onlysymbol|	F||	
+|empty	|combination|	T|	×|
+|notempty|	null|	T|	×|
+|empty|	empty|	F|	×|
+|null|	onlydigit|	F||	
+|notempty|	onlyword|	T|	
+|empty|	onlysymbol|	F|	|
+|null|	combination|	T|	×|
+
+9 test cases
+
 | fit.verbalExpression.TestGetTextWithOnePara |
 | pValue | match | isText? |
 |null	|empty|	ERROR|

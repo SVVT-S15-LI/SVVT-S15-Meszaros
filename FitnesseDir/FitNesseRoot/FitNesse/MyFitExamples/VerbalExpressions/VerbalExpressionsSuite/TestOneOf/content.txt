@@ -1,0 +1,17 @@
+<test page>
+
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+
+
+| fit.verbalExpression.TestOneOf |
+| input1 | input2 | match | isOneOf? |
+|null	|abc|	empty	|false|
+|123	|null|	123456789	|true|
+|""	|input|	onlyword	|true|
+|notempty|	123|	https://www.google456.com|false|
+|input	|""	|1234567890	|true|
+|<>	|safari765|	@#%&+-	|false|
+|asdf	|null	|83745234|false|
+|safari765|	wo	|onlyword|true|
+|input|	""	|^%$#@!~&(|true|

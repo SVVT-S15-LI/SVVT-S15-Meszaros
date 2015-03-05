@@ -1,43 +1,40 @@
 package verbalExpression;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Pattern;
-
 public class Test {
-	String add = "";
-	String match = "yes";
-
-	public String isMaybe(){
-		Boolean result;
-		String str = "";
-		String matchStr = "yes";
-//		if(!add.equals("null")){
-//			str = add;
-//		}
-//		if(!match.equals("null")){
-//			matchStr = add;
-//		}
-//		if(!match.equals("empty")){
-//			matchStr = "";
-//		}
+	String pValue;
+	String match;
+	Boolean result;
+	
+	public String isText(){
+		String matchStr = null;
+		String pValueStr = null;
+		if(match!=null){
+			matchStr = match;
+		}
+		if(pValue!=null){
+			pValueStr = pValue;
+		}
 		try{
-			VerbalExpression testRegex = new VerbalExpression.Builder().add(matchStr.substring(0, matchStr.length()-str.length())).maybe(str).build();						
-			Pattern pt1 = Pattern.compile(testRegex.toString());
-			result = pt1.matcher(matchStr).matches();
+			VerbalExpression testRegex = new VerbalExpression.Builder().find("6").build();
+			System.out.println(testRegex.getText("1234566"));
+			return testRegex.getText(matchStr);
 		}catch(Exception e){
 			return "ERROR";
 		}
-			return String.valueOf(result);
 	}
-	
      
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Test t = new Test();
-		
-		
+//		Test t = new Test();
+//		t.pValue = "6";
+//		t.match = "1234566";
+//		
+//		System.out.println(t.isText());
+//		
+		String str = "wo";
+        String match = "onlyword";
+        VerbalExpression testRegex = new VerbalExpression.Builder().find(str).build();
+        System.out.println(testRegex.getText(match));
 	}
 
 }

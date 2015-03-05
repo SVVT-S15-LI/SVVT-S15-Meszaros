@@ -3,6 +3,48 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+This is the test for testExact(final String pToTest) method.
+
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue is the parameter of testExact method, match is the String we use to match.|
+|pValue|match| 
+
+Then identify characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|
+|pValue|Relation to empty|null,empty(""),not empty|
+|match|Type of string|null,empty(""),only digit, only word, only symbol, combination|
+|isNotInMatch|whether pValue is in match|T,F| 
+
+Apply all pair to generate combinations.
+
+| Comment |
+|pValue|	match|	isNotInMatch|	Possible?|
+|empty	|null|	T	|×|
+|null	|empty|	F	||
+|notempty|	onlydigit|	T||	
+|empty	|onlyword|	F|	×|
+|null	|onlysymbol|	T||	
+|notempty|	combination|	F||	
+|null	|null|	F	||
+|notempty|	empty|	T||	
+|empty	|onlydigit|	F|	×|
+|null	|onlyword|	T||	
+|notempty|	onlysymbol|	F||	
+|empty	|combination|	T|	×|
+|notempty|	null|	T||	
+|empty|	empty|	F|	×|
+|null|	onlydigit|	F||	
+|notempty|	onlyword|	T||	
+|empty|	onlysymbol	|F|	×|
+|null|	combination|	T||	
+
+12 test cases
+
 | fit.verbalExpression.TestExact |
 |pValue | match | isExact? |
 |null	|empty|	ERROR|

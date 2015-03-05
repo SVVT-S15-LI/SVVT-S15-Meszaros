@@ -2,6 +2,73 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+This is for startOfLine with parameters
+
+First, identify the attributes.
+
+| Comment |
+| Attributes - add is the parameter of maybe startOfLine, match is the String we use to match the RE, pEnable is the input of startOfLine|
+|start|match|enable| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|start|Relation to empty|null,empty(""),not empty||
+|enable|enable start of line|T,F||
+|match|Relation to empty and type of elements|null,empty(""),only digit, only letter, only symbol and combination||
+|isContains|is match contains start|T, F| |
+|position|position of start in match|start,middle,end,not exist| |
+
+Apply all pair to generate combinations.
+
+| Comment |
+|enable|start|	match|	isContains|	position|
+|T	|empty	|null	|contains	|start|
+|F	|null	|empty	|not contains	|middle|
+|T	|notempty|	onlydigit	|contains|	end|	
+|F	|empty	|onlyword|	not contains	|not exist	|
+|T	|null	|onlysymbol|	not contains|	start|
+|F	|notempty	|combination	|contains	|middle|	
+|T	|null	|null	|not contains|	end|
+|T	|notempty	|empty|	contains	|not exist|
+|F	|empty	|onlydigit	|contains	|start|	
+|T	|null	|onlyword	|not contains|	middle	|
+|F	|notempty	|onlysymbol|	contains	|end|
+|T	|empty	|combination|	not contains	|not exist|
+|F	|notempty|	null	|not contains	|middle	|
+|T	|empty	|empty	|contains|	start	|
+|F	|null	|onlydigit	|not contains|	not exist|
+|T	|notempty|	onlyword	|contains|	end|
+|F	|empty	|onlysymbol|	not contains	|middle|
+|T	|null	|combination|	contains	|start|	
+|T	|notempty|	null|	contains|	not exist|
+|F	|empty	|empty	|not contains|	end|
+|T	|null	|onlydigit|	contains|	middle|
+|F	|notempty|	onlyword	|not contains	|start|
+|T	|null	|onlysymbol	|not contains|	not exist|	
+|F	|empty	|combination|	contains	|end	|
+
+24 cases, 2 impossible
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table|
+|isEnable	|F|	T	|T	|T	|
+|isMatch onlydigit|	-|	-|	-|	-|
+|isMatch word	|-|	-|	-|	-|
+|isMatch symbol	|-	|-	|-	|-	|
+|isMatch combination	|-	|-	|-	|-|
+|iscontains	|-	|F	|T	|T	|
+|is start	|-	|-	|T	|F	|
+|is middle	|-|	-|	-|	-|
+|is end	|-	|-|	-	|-|					
+|isStartOfLine?|	|	|	|X	|	
+
+4cases, all covered by all pair
+
 | fit.verbalExpression.TestStartOfLineParameter |
 |enable | start | match | isStartOfLine? |
 | T |	“" |	null |	ERROR |

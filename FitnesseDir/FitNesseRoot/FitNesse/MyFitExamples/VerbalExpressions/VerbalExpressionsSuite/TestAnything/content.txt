@@ -2,6 +2,47 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - match is the String we use to match the RE|
+|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|match|Relation to empty and type of elements|null,empty(""),only digit, only letter, only symbol and combination||
+
+Apply all pair to generate combinations.
+
+| Comment |
+| match | 
+|null	|
+|empty	|
+|onlydigit	|
+|onlyletter	|
+|onlysymbol|
+|combination|
+
+6 cases
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table|
+|isMatch = null| T| F|
+|isMatch = empty| -| -|
+|isMatch = onlydigit| -|- |
+|isMatch = onlyletter| -| -|
+|isMatch = onlysymbol| -| -|			
+|isMatch = combination|- | -|
+|isStartOfLine?| |X	|	
+
+2 cases, all covered by All Pair.
+
+
 | fit.verbalExpression.TestAnything |
 | match | isAnything? |
 |null	|ERROR|

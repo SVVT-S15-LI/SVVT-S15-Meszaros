@@ -1,0 +1,11 @@
+<test page>
+!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
+
+
+
+| fit.verbalExpression.TestGetTextWithTwoPara |
+| input1 | input2 | match | group | isText? |
+|a|	cd|	abcdef	|1|	cd|
+|a|	cd|	abcdef	|4|	java.lang.IndexOutOfBoundsException: No group 4|
+|w|	cd|	word123$%^|	1|	empty|
+|w|	notinmatch|	word123$%^|	2|	empty|

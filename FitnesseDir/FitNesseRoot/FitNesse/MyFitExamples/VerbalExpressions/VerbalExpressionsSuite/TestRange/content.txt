@@ -2,16 +2,70 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - str1, str2 is the parameter of somethingBut method, match is the String we use to match the RE|
+|str1|str2|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|str1|Relation to empty|null,empty(""),not empty||
+|str1|Relation to empty|null,empty(""),not empty||
+|match|Relation to empty and type of elements|null,empty(""),only digit, only letter, only symbol and combination||
+|inRange|is match in range str1, str2|T, F| |
+
+Apply all pair to generate combinations.
+
+| Comment |
+|str1|	str2|match|	inRange  |
+|empty|	empty|	onlydigit|	F|
+|empty	|null	|onlysymbol	|T|
+|notempty	|empty|	onlyletter|	T|
+|empty	|notempty|	onlyletter|	F|
+|notempty|	notempty	|combination|	F|
+|notempty	|null	|empty	|F|
+|null	|empty|	onlysymbol	|F|
+|null	|notempty|	empty	|T|
+|null	|empty|	combination	|T|
+|null|	null	|null	|F|
+|notempty	|empty|	null|	T|
+|notempty	|null|	onlydigit|	T|
+|empty	|empty|	empty|	T*|
+|empty	|notempty	|null|	F*|
+|empty	|null|	combination|	T*|
+|notempty	|notempty	|onlysymbol|	F*|
+|null	|notempty|	onlydigit|	T|
+|null	|null	|onlyletter	|F|
+
+18 cases, 7 impossible
+
+combine decision table to generate test cases
+
+| Comment |
+|Decision table for valid value	|							
+|isMATCH=digit	|-	|-|
+|isMATCH=word|	-	|-|
+|isMATCH=symbol|	-	|-	|
+|isMATCH=combination|	-	|-	|
+|inRange|	T|	F|
+|isInRange	|	X|	|			
+
+2 cases, all covered by All Pair.
+
 | fit.verbalExpression.TestRange |
 | str1 | str2 | match | isRange? |
-|""|	2|	3	|	FALSE|
+|""|	2|	3	|	false|
 |""|	null|	e	|	ERROR|
-|a|	z|	[]!21dwhwh|	FALSE|
+|a|	z|	[]!21dwhwh|	false|
 |null|	null|	d	|	ERROR|
-|""|	""|	r	|	FALSE|
+|""|	""|	r	|	false|
 |a|	null|	""	|	ERROR|
 |""|	""|	null	|	ERROR|
-|""|	""|	""	|	FALSE|
+|""|	""|	""	|	false|
 |a|	z|	null	|	ERROR|
-|a|	z|	b	|	TRUE|
+|a|	z|	b	|	true|
 |null|	null|	combination|	ERROR|

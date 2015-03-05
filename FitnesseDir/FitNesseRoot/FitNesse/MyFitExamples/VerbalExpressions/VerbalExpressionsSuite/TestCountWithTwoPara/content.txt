@@ -2,6 +2,62 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue is the String for count, count1, count2 is the parameter of count method, match is the String we use to match the RE|
+|pValue|count1|count2|match| 
+
+Then identify Characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|Note/Constrains|
+|pValue|Relation to empty|null,empty(""),not empty||
+|count1|Relation to 0 and 1|<0,=0,=1,>1||
+|count2|Relation to 0 and 1|<0,=0,=1,>1||
+|match|Relation to empty|null,empty(""),not empty||
+|num|number of pValue in match|<0,=0,=1,>1| |
+|equals|is num equals to count|T,F| |
+
+Apply all pair to generate combinations.
+
+| Comment |
+|count1|	count2|pValue|match  |
+|<0|	<0|	null|	null|	
+|<0	|0	|empty	|empty|	
+|<0	|1	|notempty|	notempty|	
+|0	|<0|	empty	|notempty	|
+|0	|>1|	notempty|	empty	|
+|1|	1	|null	|empty|	
+|1|	>1|	empty|	null|	
+|>1|	0|	notempty	|null|	
+|>1	|>1|	null|	notempty|	
+|0|	0	|null	|notempty|	
+|0|	1	|empty	|null|	
+|1	|<0|	notempty	|empty|	
+|>1	|<0|	empty	|empty	|
+|1	|0	|null*	|notempty|	
+|<0	|>1	|empty*|	null*|	
+|>1	|1|	notempty*|	empty*|	
+
+16 cases
+
+combine decision table to generate test cases
+
+| Comment |
+|contains?|	F|	T	|T	|T	|	T|	T	|T|	T|
+|count1=1	|-	|T	|T|	T|		-|	-|	-|	-|
+|count1>1|	-|	-	|-	|-|		T|	T|	T|	T|
+|count2=1	|-	|-	|T	|-		|T	|-|	-	|-|
+|count2>1	|-	|-	|-	|T	|	-|	T|	T	|T|
+|num=1|	-|	T|	-|	-		|-	|T|	-|	-|
+|num>1|	-	|-	|T	|T		|-	|-	|T|	T|
+|inRange	|-	|-	|-	|-		|-	|-	|T|	F|
+|isCount	|	|X|	|	X|	IMPOSSIBLE|	|	X	|	|
+
+8 cases, 1 covered, 1 impossible
+
 | fit.verbalExpression.TestCountWithTwoPara |
 |count1 | count2 | pValue | match | isCountWithTwoPara? |
 |-1|	-1|	null|	null	|ERROR|
@@ -14,15 +70,15 @@
 |2|	0|	aa|	null	|ERROR|
 |2|	2|	null|	aa	|false|
 |0|	0|	null|	aa	|false|
-|0|	1|	""	null	|ERROR|
+|0|	1|	""  | 	null	|ERROR|
 |1|	-1|	wqr|	""	|ERROR|
 |2|	-1|	empty|	""	|ERROR|
 |1|	0|	null|	gfd	|ERROR|
 |-1|	2|	""|	null	|ERROR|
 |2|	1|	eqw|	""	|ERROR|
-|1|	1|	aa|	waa	|true|
+|1|	1|	aa|	aa	|true|
 |1|	1|	a|	aaaaaaaa|false|
-|1|	10|	aa|	waa	|true|
+|1|	10|	aa|	aa	|true|
 |2|	3|	a|	wa	|false|
 |2|	4|	a|	aaa	|true|
 |2|	4|	a|	aaaaaaaa|false|

@@ -22,7 +22,7 @@ public class TestCountWithTwoPara extends ColumnFixture{
 				pValueStr = pValue;
 			}
 			try{
-				VerbalExpression regex = VerbalExpression.regex().find(pValueStr).count(Integer.parseInt(count1), Integer.parseInt(count2)).build();			
+				VerbalExpression regex =  new VerbalExpression.Builder().add(pValueStr).count(Integer.parseInt(count1), Integer.parseInt(count2)).build();			
 				Pattern pt1 = Pattern.compile(regex.toString());
 				result = pt1.matcher(matchStr).matches();
 			}catch(Exception e){
