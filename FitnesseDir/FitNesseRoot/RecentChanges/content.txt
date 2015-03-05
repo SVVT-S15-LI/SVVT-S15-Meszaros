@@ -1,4 +1,5 @@
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything||15:50:34 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||15:53:18 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything||15:52:01 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||10:51:35 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture||10:44:56 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||10:38:51 Thu, Mar 05, 2015|
@@ -7,7 +8,6 @@
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithTwoPara||10:22:31 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithOnePara||10:21:39 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange||10:20:43 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||10:19:46 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnythingBut||10:18:36 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture||17:45:41 Wed, Mar 04, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter||17:07:13 Wed, Mar 04, 2015|
