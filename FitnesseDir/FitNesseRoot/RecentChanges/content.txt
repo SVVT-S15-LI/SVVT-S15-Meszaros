@@ -1,7 +1,7 @@
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything||15:50:34 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||10:51:35 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture||10:44:56 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||10:38:51 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything||10:33:51 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestExact||10:28:17 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithOnePara||10:27:30 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithTwoPara||10:22:31 Thu, Mar 05, 2015|

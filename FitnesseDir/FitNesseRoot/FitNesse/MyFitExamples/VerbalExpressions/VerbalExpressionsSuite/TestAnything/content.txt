@@ -38,7 +38,7 @@ combine decision table to generate test cases
 |isMatch = onlyletter| -| -|
 |isMatch = onlysymbol| -| -|			
 |isMatch = combination|- | -|
-|isStartOfLine?| |X	|	
+|isAnthing?| |X	|	
 
 2 cases, all covered by All Pair.
 
