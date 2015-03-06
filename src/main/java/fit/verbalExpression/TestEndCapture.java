@@ -24,7 +24,7 @@ public class TestEndCapture extends ColumnFixture{
             .capture().find(inputStr).anything().endCapture().build();
 
 			Pattern pt1 = Pattern.compile(testRegex.toString());
-        	result = pt1.matcher(matchStr).matches();
+        	result = pt1.matcher(matchStr).find();
 		}catch(Exception e){
 			return "ERROR";
 		}

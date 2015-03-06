@@ -75,6 +75,6 @@ It could be
 |null|	null|	ERROR|
 |""|	5431|	true|
 |#|	[]!@%|	true|
-|null|	onlydigit|ERROR|
+|null|	1234|ERROR|
 |el|	hello|	false|
-|""|	onlysymbol|true|
+|""|	!@#$%%^|true|

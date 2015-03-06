@@ -20,10 +20,10 @@ public class TestOneOf extends ColumnFixture{
 			matchStr = match;
 		}
 		if(input1!=null){
-			input1Str = match;
+			input1Str = input1;
 		}
 		if(input2!=null){
-			input2Str = match;
+			input2Str = input2;
 		}
 		try{
 			VerbalExpression testRegex = new VerbalExpression.Builder().anything().oneOf(input1Str, input2Str).build();

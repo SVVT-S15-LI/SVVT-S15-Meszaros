@@ -1,9 +1,0 @@
-<test page>
-!define SPC {!-&nbsp;-!}
-!include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
-
-| fit.verbalExpression.TestTab |
-|match| pValue| isTab? | isRegex? | isRight? | equal? |
-|ae| e|\t | (?:\t) | true | true |
-|"\t"|a |"\t" | (?:\t) | true | true |
-|!-&nbsp;-!|a |!-&nbsp;-!| (?:\t) | true | true |

@@ -14,7 +14,7 @@ public class TestStartOfLine extends ColumnFixture{
 		Pattern pt1 = Pattern.compile(testRegex.toString());
 		Boolean result;
 		try{
-			 result = pt1.matcher(match).matches();
+			 result = pt1.matcher(match).find();
 		}catch(Exception e){
 			return "ERROR";
 		}
