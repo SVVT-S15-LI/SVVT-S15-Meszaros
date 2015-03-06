@@ -9,9 +9,9 @@
 |null	|abc|	empty	|false|
 |123	|null|	123456789	|true|
 |""	|input|	onlyword	|true|
-|notempty|	123|	https://www.google456.com|false|
+|notempty|	123|	google456|false|
 |input	|""	|1234567890	|true|
 |<>	|safari765|	@#%&+-	|false|
 |asdf	|null	|83745234|false|
 |safari765|	wo	|onlyword|true|
-|input|	""	|^%$#@!~&(|true|
+|input|	""	|%$#@!~&|true|
