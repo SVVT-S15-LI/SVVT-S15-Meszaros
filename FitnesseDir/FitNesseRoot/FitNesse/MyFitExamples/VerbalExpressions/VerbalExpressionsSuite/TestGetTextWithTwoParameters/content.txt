@@ -34,3 +34,6 @@ Apply decision table to generate combinations.
 |a|	cd|	abcdef	|4|	java.lang.IndexOutOfBoundsException: No group 4|
 |w|	cd|	word123$%^|	1|	""|
 |w|	notinmatch|	word123$%^|	2|	""|
+|a|	cd|	abcdabcd|1|	cdcd|
+
+Two branches, with while loop or without while loop, with while loop not covered by black box

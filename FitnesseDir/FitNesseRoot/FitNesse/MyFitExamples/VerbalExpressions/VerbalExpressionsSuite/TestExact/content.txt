@@ -23,7 +23,7 @@ Then identify characteristics and partitions
 Apply all pair to generate combinations.
 
 | Comment |
-|pValue|	match|	isNotInMatch|	Possible?|
+|pValue|	match|	isTheSameAsMatch|	Possible?|
 |empty	|null|	T	|×|
 |null	|empty|	F	||
 |notempty|	onlydigit|	T||	
@@ -48,7 +48,7 @@ Apply all pair to generate combinations.
 | fit.verbalExpression.TestExact |
 |pValue | match | isExact? |
 |null	|""|	ERROR|
-|w	|123456|true|
+|123456|123456|true|
 |null	|*&^$(&	|ERROR|
 |a	|what123@#$|false|
 |null	|null	|ERROR|
@@ -57,5 +57,9 @@ Apply all pair to generate combinations.
 |@#	|%*@#$%	|false|
 |notempty|	null|false|
 |null|	982345	|ERROR|
-|abce|	onlywords|true|
+|abce|	onlywords|false|
 |null|	combin@tion987|	ERROR|
+|null|	abc|	ERROR|
+|a|	abc|	false|
+
+Two branches, null or not null, all covered by black box

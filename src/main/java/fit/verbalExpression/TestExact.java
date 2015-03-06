@@ -17,7 +17,7 @@ public class TestExact extends ColumnFixture{
 			pValueStr = pValue;
 		}
 		try{
-			VerbalExpression testRegex = new VerbalExpression.Builder().somethingButNot(pValueStr).build();					
+			VerbalExpression testRegex = new VerbalExpression.Builder().find(pValueStr).build();					
 			result = testRegex.testExact(matchStr);
 		}catch(Exception e){
 			return "ERROR";

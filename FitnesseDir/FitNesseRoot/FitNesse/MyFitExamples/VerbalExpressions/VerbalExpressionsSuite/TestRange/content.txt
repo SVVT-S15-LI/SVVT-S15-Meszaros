@@ -60,7 +60,7 @@ combine decision table to generate test cases
 | str1 | str2 | match | isRange? |
 |""|	2|	3	|	false|
 |""|	null|	e	|	ERROR|
-|a|	z|	[]!21dwhwh|	false|
+|a|	z|	21dwhwh!|	false|
 |null|	null|	d	|	ERROR|
 |""|	""|	r	|	false|
 |a|	null|	""	|	ERROR|
@@ -68,4 +68,4 @@ combine decision table to generate test cases
 |""|	""|	""	|	false|
 |a|	z|	null	|	ERROR|
 |a|	z|	b	|	true|
-|null|	null|	combination|	ERROR|
+|null|	null|	2aabc#|	ERROR|

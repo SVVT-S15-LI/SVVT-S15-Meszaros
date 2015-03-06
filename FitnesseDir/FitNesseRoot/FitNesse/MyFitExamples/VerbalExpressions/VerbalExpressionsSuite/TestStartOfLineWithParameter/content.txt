@@ -93,3 +93,9 @@ combine decision table to generate test cases
 | F |	"" |	what?123[] |	false |
 | F |	sa |	[]sae1 |	 false |			
 | F |	! |	[]! |	false |
+| T |	12|	12|	true|
+| F | 	12|	123|	false|
+
+There are two branches in startOfLine, input true or false, all covered by black box
+
+

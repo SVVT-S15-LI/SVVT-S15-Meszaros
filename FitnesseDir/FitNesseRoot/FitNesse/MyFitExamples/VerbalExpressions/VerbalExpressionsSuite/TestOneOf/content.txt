@@ -49,9 +49,18 @@ Apply all pair to generate combinations.
 |null	|abc|	""	|false|
 |123	|null|	123456789	|true|
 |""	|input|	onlyword	|true|
-|notempty|	123|	google456|false|
-|input	|""	|1234567890	|true|
+|abc|	123|	google456|false|
+|input	|""	|1234567890	|false|
 |<>	|safari765|	@#%&+-	|false|
 |asdf	|null	|83745234|false|
 |safari765|	wo	|onlyword|true|
-|input|	""	|%$#@!~&|true|
+|input|	""	|%$#@!~&|false|
+|null|	null|	abc|	false|
+|""|	""|	abc|	false|
+|""|	a|	abc|	true|
+|""|	ab|	abc|	true|
+
+Four branches in oneOf, all null or all length equals 0 won't implement for loop, length equails 1 won't implement if branch. 
+
+
+

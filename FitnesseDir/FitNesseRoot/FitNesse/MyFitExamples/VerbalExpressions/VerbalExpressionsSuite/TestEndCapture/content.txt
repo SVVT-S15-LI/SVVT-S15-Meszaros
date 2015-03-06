@@ -57,3 +57,11 @@ Apply all pairs to generate combinations.
 |null|	83745234	|ERROR|
 |onl|	onlyword	|true|
 |""|	^%$#@!~&(	|true|
+
+There are two branches in endCapture, exception not covered by black box
+
+| fit.verbalExpression.TestEndCapture |
+| input | match | whiteBoxEndCapture? |
+|withoutcapture	|throwexception|Can't end capture when it not started|
+
+

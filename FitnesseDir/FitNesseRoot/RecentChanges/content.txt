@@ -1,27 +1,22 @@
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestExact||17:19:33 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter||21:40:04 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture||21:39:38 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||21:39:04 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||21:38:16 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestExact||21:34:20 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange||20:30:35 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||18:51:48 Thu, Mar 05, 2015|
 <<<<<<< HEAD
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||16:04:40 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithOnePara||16:03:55 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture||16:00:35 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||15:54:23 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture||15:49:47 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything||10:33:51 Thu, Mar 05, 2015|
 =======
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnythingBut||16:52:19 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||16:36:49 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter||16:07:34 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||15:53:18 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything||15:52:01 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||10:51:35 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture||10:44:56 Thu, Mar 05, 2015|
 >>>>>>> 17983faec01c3baa51d821894a898fc031c89cf3
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithTwoPara||10:22:31 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithOnePara||10:21:39 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange||10:20:43 Thu, Mar 05, 2015|
 <<<<<<< HEAD
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||10:19:46 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnythingBut||10:18:36 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter||17:07:13 Wed, Mar 04, 2015|
 =======
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture||17:45:41 Wed, Mar 04, 2015|
 >>>>>>> 17983faec01c3baa51d821894a898fc031c89cf3
