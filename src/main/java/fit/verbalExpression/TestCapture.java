@@ -22,7 +22,7 @@ public class TestCapture extends ColumnFixture{
 		try{
 			VerbalExpression testRegex = new VerbalExpression.Builder().anything().capture().find(pValueStr).anything().build();//   (?:.*).word()
             Pattern pt1 = Pattern.compile(testRegex.toString());
-            result = pt1.matcher(matchStr).matches();
+            result = pt1.matcher(matchStr).find();
 		}catch(Exception e){
 			return "ERROR";
 		}

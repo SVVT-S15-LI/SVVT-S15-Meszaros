@@ -21,7 +21,7 @@ public class TestAnything extends ColumnFixture{
 		    .anything()
 		    .build();					
 			Pattern pt1 = Pattern.compile(testRegex.toString());
-			result = pt1.matcher(matchStr).matches();
+			result = pt1.matcher(matchStr).find();
 		}catch(Exception e){
 			return "ERROR";
 		}

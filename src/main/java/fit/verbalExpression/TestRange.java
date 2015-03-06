@@ -27,7 +27,7 @@ public class TestRange extends ColumnFixture{
 		try{
 			VerbalExpression regex = VerbalExpression.regex().range(pStr1, pStr2).build();			
 			Pattern pt1 = Pattern.compile(regex.toString());
-			result = pt1.matcher(matchStr).matches();
+			result = pt1.matcher(matchStr).find();
 		}catch(Exception e){
 			return "ERROR";
 		}
