@@ -47,12 +47,12 @@ Apply all pair to generate combinations.
 
 | fit.verbalExpression.TestExact |
 |pValue | match | isExact? |
-|null	|empty|	ERROR|
+|null	|""|	ERROR|
 |w	|123456|true|
 |null	|*&^$(&	|ERROR|
 |a	|what123@#$|false|
 |null	|null	|ERROR|
-|what	|empty	|false|
+|what	|""	|false|
 |null	|onlyword|ERROR|
 |@#	|%*@#$%	|false|
 |notempty|	null|false|
