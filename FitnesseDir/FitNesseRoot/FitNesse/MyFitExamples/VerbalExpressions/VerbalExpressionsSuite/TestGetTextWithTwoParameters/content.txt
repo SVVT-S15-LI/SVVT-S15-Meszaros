@@ -1,11 +1,36 @@
 <test page>
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+This is the test for getText(final String toTest, final int group) method.
+getText means: Extract full string that matches regex.
 
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue and group are the input of getText method, match is the String we use to match.|
+|pValue|group|match| 
+
+Then identify characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|
+|pValue|Relation to empty|null,empty(""),not empty|
+|match|Type of string|null,empty(""),only digit, only word, only symbol, combination|
+|isInMatch|whether pValue is in match|T,F| 
+
+Apply decision table to generate combinations.
+
+| Comment |
+|ispValueInMatch?|	isGroupExist?|
+|T|	T|
+|T|	F|
+|F|	T|
+|F|	F|
 
 | fit.verbalExpression.TestGetTextWithTwoPara |
 | input1 | input2 | match | group | isText? |
 |a|	cd|	abcdef	|1|	cd|
 |a|	cd|	abcdef	|4|	java.lang.IndexOutOfBoundsException: No group 4|
-|w|	cd|	word123$%^|	1|	empty|
-|w|	notinmatch|	word123$%^|	2|	empty|
+|w|	cd|	word123$%^|	1|	""|
+|w|	notinmatch|	word123$%^|	2|	""|

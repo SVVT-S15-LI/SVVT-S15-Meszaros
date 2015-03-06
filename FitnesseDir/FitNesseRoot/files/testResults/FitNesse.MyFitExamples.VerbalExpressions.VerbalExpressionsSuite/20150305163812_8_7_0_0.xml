@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20150114</FitNesseVersion>
+  <rootPath>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite</rootPath>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnything?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>40</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>97</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnythingBut</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestAnythingBut?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>170</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>33</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>154</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithOnePara</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithOnePara?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>147</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithTwoPara</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCountWithTwoPara?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>183</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>7</wrong>
+      <ignores>92</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>17</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestExact</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestExact?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>1</wrong>
+      <ignores>92</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithOnePara</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithOnePara?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>7</wrong>
+      <ignores>91</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>4</wrong>
+      <ignores>27</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestMaybe</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestMaybe?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>115</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>4</wrong>
+      <ignores>93</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange</name>
+    <date>03/05/2015 16:38:12</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange?pageHistory&amp;resultDate=20150305163812</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>120</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot</name>
+    <date>03/05/2015 16:38:13</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot?pageHistory&amp;resultDate=20150305163813</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>1</wrong>
+      <ignores>170</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLine</name>
+    <date>03/05/2015 16:38:13</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLine?pageHistory&amp;resultDate=20150305163813</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>1</wrong>
+      <ignores>186</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter</name>
+    <date>03/05/2015 16:38:13</date>
+    <pageHistoryLink>FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter?pageHistory&amp;resultDate=20150305163813</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>205</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10</runTimeInMillis>
+  </pageHistoryReference>
+    <finalCounts>
+    <right>8</right>
+    <wrong>7</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2789</totalRunTimeInMillis>
+
+</suiteResults>
+

@@ -2,14 +2,78 @@
 
 !include .FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsHeader
 
+This is the test for capture() method.
+
+First, identify the attributes.
+
+| Comment |
+| Attributes - pValue is the input that need capture method to open brace, match is the String we use to match.|
+|pValue|match| 
+
+Then identify characteristics and partitions
+
+| Comment |
+| Characteristics and Partitions|
+|Characteristic|Definition|Partition|
+|pValue|Relation to empty|null,empty(""),not empty|
+|match|Type of string|null,empty(""),only digit, only word, only symbol, combination|
+|isInMatch|whether pValue is in match|T,F| 
+
+Apply all pairs to generate combinations.
+
+| Comment |
+|pValue|	match|	isInMatch|	Possible?|
+|empty	|null|	T	|×|
+|null	|empty|	F	||
+|notempty|	onlydigit|	T||	
+|empty	|onlyword|	F	||
+|null	|onlysymbol|	T|	×|
+|notempty|	combination	|F||	
+|null	|null|	F	|×|
+|notempty|	empty|	T|	×|
+|empty	|onlydigit	|F||	
+|null	|onlyword	|T|	×|
+|notempty|	onlysymbol	|F||	
+|empty	|combination|	T|	×|
+|notempty|	null|	T	|×|
+|empty	|empty	|F|	×|
+|null	|onlydigit	|F||	
+|notempty|	onlyword|	T||	
+|empty	|onlysymbol	|F	||
+|null|	combination	|T|	×|
+
+9 test cases
+
+Combine decision table to generate test cases
+
+| Comment |
+|desion table for valid value|						
+|isMATCH=digit|	T|	T|	-|	-|	-|	-|
+|isMATCH=word|	-|	-|	T|	T|	-|	-|
+|isMATCH=symbol|	-|	-	|-|	-|	T|	T|
+|isMATCH=combination|	-|	-|	-	|-|	-	|-|
+|isInputInMatch	|T|	F|	T|	F|	T|	F|
+|isCapture				|||||||
+
+| Comment |
+|simplified decision table|
+|isMATCH=digit|	-	|-|
+|isMATCH=word|	-|	-|
+|isMATCH=symbol|	-|	-|
+|isMATCH=combination	|-|	-|
+|isInputInMatch	|T|	F|
+|isCapture||	|			
+
+2 test cases, all covered by all-pairs
+
 | fit.verbalExpression.TestCapture |
 | pValue | match | isCapture? |
 |null|	""|		ERROR|
 |45|	123456|		true|
-|""|	google|		true|
+|""|	google|		false|
 |123|	https://www.google456.com|false|
-|""|	1234567890	|	true|
+|""|	1234567890	|	false|
 |safari765|	!@#$%^&*()	|false|
 |null|	83745234	|	ERROR|
 |word|	onlyword	|	true|
-|""|	^%$#@!~&(	|	true|
+|""|	^%$#@!~&(	|	false|
