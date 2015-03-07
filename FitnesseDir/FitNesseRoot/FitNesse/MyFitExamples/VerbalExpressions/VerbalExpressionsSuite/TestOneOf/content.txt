@@ -7,7 +7,7 @@ This is the test for oneOf(final String... pValues) method.
 First, identify the attributes.
 
 | Comment |
-| Attributes - pValue is the parameter of testExact method, match is the String we use to match.|
+| Attributes - pValue is the parameter of oneOf method, match is the String we use to match.|
 |pValue1|pValue2|match| 
 
 Then identify characteristics and partitions
@@ -22,7 +22,7 @@ Then identify characteristics and partitions
 Apply all pair to generate combinations.
 
 | Comment |
-|oneOfpValue|	match|	isNotInMatch|	Possible?|
+|oneOfpValue|	match|	isInMatch|	Possible?|
 |empty|	null|	T|	×|
 |null	|empty	|F||	
 |notempty|	onlydigit|	T||	
@@ -47,8 +47,8 @@ Apply all pair to generate combinations.
 | fit.verbalExpression.TestOneOf |
 | input1 | input2 | match | isOneOf? |
 |null	|abc|	""	|false|
-|123	|null|	123456789	|true|
-|""	|input|	onlyword	|true|
+|123	|input2|	123456789	|true|
+|""	|input|	onlyword	|false|
 |abc|	123|	google456|false|
 |input	|""	|1234567890	|false|
 |<>	|safari765|	@#%&+-	|false|

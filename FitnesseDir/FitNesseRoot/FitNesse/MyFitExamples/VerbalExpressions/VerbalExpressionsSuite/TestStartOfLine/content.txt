@@ -5,7 +5,7 @@
 First, identify the attributes.
 
 | Comment |
-| Attributes - add is the parameter of startOfLine method, match is the String we use to match the RE|
+| Attributes - start is the String should be start of a string's beginning, match is the String we use to match the RE|
 |start|match| 
 
 Then identify Characteristics and partitions

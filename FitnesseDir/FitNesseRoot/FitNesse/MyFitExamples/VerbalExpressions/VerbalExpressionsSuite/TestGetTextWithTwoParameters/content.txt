@@ -30,10 +30,10 @@ Apply decision table to generate combinations.
 
 | fit.verbalExpression.TestGetTextWithTwoPara |
 | input1 | input2 | match | group | isText? |
-|a|	cd|	abcdef	|1|	cd|
-|a|	cd|	abcdef	|4|	java.lang.IndexOutOfBoundsException: No group 4|
-|w|	cd|	word123$%^|	1|	""|
-|w|	notinmatch|	word123$%^|	2|	""|
-|a|	cd|	abcdabcd|1|	cdcd|
+|a	|cd	|abcdef|	2|	cd|
+|a	|cd	|abcdef	|      4|java.lang.IndexOutOfBoundsException: No group 4|
+|notinmatch|cd	|word123{}[]|	1|	""|
+|input	|notinmatch|	word123{}[]|	9|	""|
+|a	|cd|	abcdcdef|	2|	cdcd|
 
 Two branches, with while loop or without while loop, with while loop not covered by black box

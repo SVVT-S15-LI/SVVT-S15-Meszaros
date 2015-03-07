@@ -5,7 +5,7 @@
 First, identify the attributes.
 
 | Comment |
-| Attributes - str1, str2 is the parameter of somethingBut method, match is the String we use to match the RE|
+| Attributes - str1, str2 is the parameter of Range method, match is the String we use to match the RE|
 |str1|str2|match| 
 
 Then identify Characteristics and partitions

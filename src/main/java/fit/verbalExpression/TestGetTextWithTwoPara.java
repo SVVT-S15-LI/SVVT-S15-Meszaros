@@ -25,7 +25,7 @@ public class TestGetTextWithTwoPara extends ColumnFixture{
 			input2Str = input2;
 		}
 		try{
-			VerbalExpression testRegex = new VerbalExpression.Builder().find(input1Str).anything().capture().find(input2Str).build();			
+			VerbalExpression testRegex = new VerbalExpression.Builder().capture().find(input1Str).anything().capture().find(input2Str).build();			
 			return testRegex.getText(matchStr, Integer.parseInt(group));
 		}catch(Exception e){
 			return "ERROR";

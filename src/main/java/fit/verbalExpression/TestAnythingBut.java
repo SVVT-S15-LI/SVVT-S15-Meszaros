@@ -25,7 +25,7 @@ public class TestAnythingBut extends ColumnFixture{
              .anythingBut(pValueStr)
              .build();				
 			Pattern pt1 = Pattern.compile(testRegex.toString());
-			result = pt1.matcher(matchStr).find();
+			result = pt1.matcher(matchStr).matches();
 		}catch(Exception e){
 			return "ERROR";
 		}

@@ -5,7 +5,7 @@
 First, identify the attributes.
 
 | Comment |
-| Attributes - pValue is the parameter of somethingBut method, match is the String we use to match the RE|
+| Attributes - pValue is the parameter of somethingButNot method, match is the String we use to match the RE|
 |pValue|match| 
 
 Then identify Characteristics and partitions

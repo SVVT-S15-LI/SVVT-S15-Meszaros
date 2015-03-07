@@ -7,7 +7,7 @@ This is for startOfLine with parameters
 First, identify the attributes.
 
 | Comment |
-| Attributes - add is the parameter of maybe startOfLine, match is the String we use to match the RE, pEnable is the input of startOfLine|
+| Attributes -  start is the String should be start of a string's beginning, match is the String we use to match the RE, enable is the parameter of startOfLine|
 |start|match|enable| 
 
 Then identify Characteristics and partitions

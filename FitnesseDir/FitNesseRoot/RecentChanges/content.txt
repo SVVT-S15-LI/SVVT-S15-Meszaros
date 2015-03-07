@@ -1,10 +1,11 @@
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter||21:40:04 Thu, Mar 05, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLineWithParameter||14:08:18 Fri, Mar 06, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLine||14:07:41 Fri, Mar 06, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||14:06:52 Fri, Mar 06, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange||14:06:29 Fri, Mar 06, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||14:06:08 Fri, Mar 06, 2015|
+|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||01:54:57 Fri, Mar 06, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestEndCapture||21:39:38 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestOneOf||21:39:04 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithTwoParameters||21:38:16 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestExact||21:34:20 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestRange||20:30:35 Thu, Mar 05, 2015|
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestSomethingButNot||18:51:48 Thu, Mar 05, 2015|
 <<<<<<< HEAD
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetTextWithOnePara||16:03:55 Thu, Mar 05, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture||16:00:35 Thu, Mar 05, 2015|
@@ -20,7 +21,6 @@
 =======
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestCapture||17:45:41 Wed, Mar 04, 2015|
 >>>>>>> 17983faec01c3baa51d821894a898fc031c89cf3
-|FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestStartOfLine||17:05:05 Wed, Mar 04, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestMaybe||16:59:43 Wed, Mar 04, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite||15:34:26 Wed, Mar 04, 2015|
 |FitNesse.MyFitExamples.VerbalExpressions.VerbalExpressionsSuite.TestGetText||15:34:14 Wed, Mar 04, 2015|
